@@ -1,0 +1,21 @@
+
+apply plugin: 'java';
+apply plugin: 'eclipse';
+apply plugin: 'maven';
+
+archivesBaseName = 'lchackweekbot';
+group = 'github.lightningcreations';
+version = '1.0';
+
+repositories{
+  jcenter()
+  mavenCentral()
+  maven {
+    url "https://libraries.minecraft.net"
+  }
+}
+
+dependencies{
+  compile 'com.mojang:brigadier:1.0.17'
+  compile 'net.dv8tion:JDA:4.BETA.0_10'
+}
