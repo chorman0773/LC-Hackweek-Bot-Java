@@ -2,6 +2,11 @@
 apply plugin: 'java';
 apply plugin: 'eclipse';
 apply plugin: 'maven';
+apply plugin: 'application';
+
+application {
+	mainClassName = 'github.lightnincreations.hackweekbot.Bot'
+}
 
 archivesBaseName = 'lchackweekbot';
 group = 'github.lightningcreations';

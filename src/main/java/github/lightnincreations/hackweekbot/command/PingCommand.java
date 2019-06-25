@@ -13,14 +13,16 @@ public class PingCommand {
 		src
 		.getRoot()
 		.addChild(LiteralArgumentBuilder
-				.<CommandSource>literal("test")
+				.<CommandSource>literal("ping")
 				.executes(PingCommand::runPingCommand)
 				.build());
+		System.out.println("Regstering Ping Command");
 	}
 	public static int runPingCommand(CommandContext<CommandSource> ctx) {
+		System.out.println("Running Command: ping");
 		CommandSource src = ctx.getSource();
 		TextChannel channel = src.getChannel();
 		channel.sendMessage("Pong!");
-		return Command<S>.SINGLE_SUCCESS;
+		return Command.SINGLE_SUCCESS;
 	}
 }
