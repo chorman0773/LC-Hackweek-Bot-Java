@@ -11,6 +11,7 @@ public class CommandRegistry {
 	public static void registerCommands(CommandDispatcher<CommandSource> dispatcher) {
 		System.out.println("Registering Commands");
 		PingCommand.registerCommand(dispatcher);
+		SetPrefixCommand.registerCommand(dispatcher);
 	}
 
 }

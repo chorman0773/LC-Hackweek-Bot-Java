@@ -35,7 +35,7 @@ public class EventHandler extends ListenerAdapter {
 		}
 	}
 	
-	private void setProperty(String key,String value,Guild guild) {
+	public static void setProperty(String key,String value,Guild guild) {
 		if(properties.containsKey(guild))
 			properties.get(guild).setProperty(key, value);
 		else {
