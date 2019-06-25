@@ -18,4 +18,5 @@ repositories{
 dependencies{
   compile 'com.mojang:brigadier:1.0.17'
   compile 'net.dv8tion:JDA:4.BETA.0_10'
+  compile 'org.xerial:sqlite-jdbc:3.27.2.1'
 }
