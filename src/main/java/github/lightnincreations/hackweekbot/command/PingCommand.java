@@ -22,7 +22,7 @@ public class PingCommand {
 		System.out.println("Running Command: ping");
 		CommandSource src = ctx.getSource();
 		TextChannel channel = src.getChannel();
-		channel.sendMessage("Pong!");
+		channel.sendMessage("Pong!").submit();
 		return Command.SINGLE_SUCCESS;
 	}
 }

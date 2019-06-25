@@ -30,7 +30,7 @@ public class EventHandler extends ListenerAdapter {
 			try {
 				dispatcher.execute(content, new CommandSource(m.getTextChannel(),m.getGuild(),m.getMember()));
 			} catch (CommandSyntaxException e) {
-				m.getChannel().sendMessageFormat("Failed To process command: %s", e.getMessage());
+				m.getChannel().sendMessageFormat("Failed To process command: %s", e.getMessage()).submit();
 			}
 		}
 	}
