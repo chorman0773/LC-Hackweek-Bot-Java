@@ -12,6 +12,7 @@ public class CommandRegistry {
 		System.out.println("Registering Commands");
 		PingCommand.registerCommand(dispatcher);
 		SetPrefixCommand.registerCommand(dispatcher);
+		IdCommand.registerCommand(dispatcher);
 	}
 
 }
